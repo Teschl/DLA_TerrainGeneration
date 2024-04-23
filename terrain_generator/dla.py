@@ -16,7 +16,7 @@ def dla256():
     map = random_aggregation(map, n)
 
     for i in [16, 32, 64, 128, 256]:
-        # TODO: implement dla256
+        # TODO: #2 implement dla256
         pass
 
     return map
@@ -61,7 +61,7 @@ def connected_to_ridge(map, x, y):
     """
     size = map.shape[0]
 
-    # TODO: catch array out of bounds for connected_to_ridge()
+    # TODO: #1 catch array out of bounds for connected_to_ridge()
 
     if (map[x+1][y] != 0.0 or map[x][y+1] != 0.0
             or map[x-1][y] != 0.0 or map[x][y-1] != 0.0):
